@@ -21,25 +21,35 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(home)/index-2/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(home)/index-2/page.js"
+      "static/chunks/app/_not-found/page.js"
     ],
-    "/(home)/index-3/page": [
+    "/(news)/blog-grid/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(home)/index-3/page.js"
+      "static/chunks/app/(news)/blog-grid/page.js"
     ],
-    "/contact/page": [
+    "/(news)/blog-standard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/(news)/blog-standard/page.js"
     ],
-    "/(pages)/(shop)/shop/page": [
+    "/(news)/blog-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/(shop)/shop/page.js"
+      "static/chunks/app/(news)/blog-details/page.js"
+    ],
+    "/(pages)/(project)/project-1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/(project)/project-1/page.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
     ]
   }
 }

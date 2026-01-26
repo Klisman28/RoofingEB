@@ -14,12 +14,12 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <div className="header_top">
                   <div className="header_top_left">
                     <ul className="top_left">
-                      <li>2464 Royal Ln. Mesa, New Jersey 45463</li>
+                      <li>Based in Pawtucket, RI</li>
                       <li>
-                        <Link href="mailto:info@example.com">info@example.com</Link>
+                        <Link href="mailto:info@example.com">E_broofing@yahoo.com</Link>
                       </li>
                       <li>
-                        <Link href="tel:+91-213-666-0027">+91-213-666-0027</Link>
+                        <Link href="tel:+774-300-1932">(774) 300-1932</Link>
                       </li>
                     </ul>
                   </div>
