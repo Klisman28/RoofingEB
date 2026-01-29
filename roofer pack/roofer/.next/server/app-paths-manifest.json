@@ -1,8 +1,9 @@
 {
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/(services)/services/page": "app/(services)/services/page.js",
+  "/about/page": "app/about/page.js",
   "/(pages)/(project)/project-2/page": "app/(pages)/(project)/project-2/page.js",
+  "/(services)/services/page": "app/(services)/services/page.js",
+  "/contact/page": "app/contact/page.js",
   "/(pages)/(testimonials)/testimonial-2/page": "app/(pages)/(testimonials)/testimonial-2/page.js",
-  "/about/page": "app/about/page.js"
+  "/api/google-reviews/route": "app/api/google-reviews/route.js"
 }
