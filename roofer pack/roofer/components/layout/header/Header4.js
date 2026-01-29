@@ -2,9 +2,9 @@ import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
 export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
-    return (
+  return (
 
-      <>
+    <>
       {/* main header */}
       <header className={`main-header style-four ${scroll ? "fixed-header" : ""}`}>
         {/* header-lower */}
@@ -28,7 +28,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
               </div>
               <div className="menu-area">
                 {/*Mobile Navigation Toggler*/}
-                <div className="mobile-nav-toggler"  onClick={handleMobileMenu}>
+                <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                   <i className="icon-bar" />
                   <i className="icon-bar" />
                   <i className="icon-bar" />
@@ -38,7 +38,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
                     className="collapse navbar-collapse show clearfix"
                     id="navbarSupportedContent"
                   >
-                  <Menu />
+                    <Menu />
                   </div>
                 </nav>
               </div>
@@ -46,18 +46,8 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
             <div className="header__right">
               <div className="header__right__button">
                 <div className="header__right__number">
-                  <Link href="tel:912136660027">
-                    <span className="icon-48" /> +91-213-666-0027
-                  </Link>
-                </div>
-                <div className="serach-button-style1">
-                  <button type="button" className="search-toggler" onClick={handlePopup}>
-                    <i className="icon-50" />
-                  </button>
-                </div>
-                <div className="shopping-cart-box">
-                  <Link href="/shop">
-                    <i className="icon-19" />
+                  <Link href="tel:+774-300-1932">
+                    <span className="icon-48" /> (774) 300-1932
                   </Link>
                 </div>
                 <div className="header-right_buttom">
@@ -96,5 +86,5 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
       </header>
       {/* main-header end */}
     </>
-    )
+  )
 }

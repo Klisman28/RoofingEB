@@ -1,8 +1,8 @@
 {
-  "/(news)/blog-standard/page": "app/(news)/blog-standard/page.js",
-  "/(pages)/(project)/project-1/page": "app/(pages)/(project)/project-1/page.js",
   "/page": "app/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(news)/blog-details/page": "app/(news)/blog-details/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/(services)/services/page": "app/(services)/services/page.js",
+  "/(pages)/(project)/project-2/page": "app/(pages)/(project)/project-2/page.js",
+  "/(pages)/(testimonials)/testimonial-2/page": "app/(pages)/(testimonials)/testimonial-2/page.js",
   "/about/page": "app/about/page.js"
 }

@@ -1,7 +1,49 @@
 
+'use client';
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useState } from "react"
+
 export default function Home() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+    const [status, setStatus] = useState('idle');
+    const [responseMsg, setResponseMsg] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('submitting');
+        setResponseMsg('');
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            if (res.ok) {
+                setStatus('success');
+                setResponseMsg('Thank you! Your message has been sent.');
+                setFormData({ name: '', email: '', phone: '', message: '' });
+            } else {
+                setStatus('error');
+                setResponseMsg(data.error || 'Something went wrong.');
+            }
+        } catch (error) {
+            setStatus('error');
+            setResponseMsg('Failed to send message.');
+        }
+    };
 
     return (
         <>
@@ -23,7 +65,7 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div className="normal__text">
-                                                <p>Eros proin nibh neque interdum accumsan, neque vitae. Tortor etiam sed suspendise faucibus volutpat mattis tortor nec.</p>
+                                                <p>E&B ROOFING LLC specializes in top-quality roofing, siding and window services. Serving Rhode Island and Southeastern Massachusetts for over 15 years.</p>
                                             </div>
                                             <div className="contact__info">
                                                 <div className="contact__info__block">
@@ -34,8 +76,7 @@ export default function Home() {
                                                     </div>
                                                     <div className="right__site__info one">
                                                         <h4>Our Location</h4>
-                                                        <p>4517 Washington Ave. Manchester,
-                                                            Kentucky 39495</p>
+                                                        <p>Pawtucket, Rhode Island <br /> (Serving RI & Southeastern MA)</p>
                                                     </div>
                                                 </div>
                                                 <div className="contact__info__block">
@@ -46,8 +87,7 @@ export default function Home() {
                                                     </div>
                                                     <div className="right__site__info one">
                                                         <h4>Email Address</h4>
-                                                        <a href="mailto:contact@example.com">contact@example.com </a> <br/>
-                                                        <a href="mailto:support@example.com">support@example.com </a> 
+                                                        <a href="mailto:E_broofing@yahoo.com">E_broofing@yahoo.com</a>
                                                     </div>
                                                 </div>
                                                 <div className="contact__info__block">
@@ -58,8 +98,8 @@ export default function Home() {
                                                     </div>
                                                     <div className="right__site__info one">
                                                         <h4>Phone Number</h4>
-                                                        <p>Emergency Cases</p>
-                                                        <a href="tel:+456987231">+(208) 555-0112 (24/7)</a>
+                                                        <p>Call or Text</p>
+                                                        <a href="tel:+17743001932">(774) 300-1932</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -69,26 +109,26 @@ export default function Home() {
                                         <div className="contact__right">
                                             <div className="form-inner">
                                                 <div className="contact___title">
-                                                    <span>Booking Form</span>
+                                                    <span>Free Estimate</span>
                                                     <h3> Send Us Message</h3>
                                                 </div>
-                                                <form method="post" action="/" id="contact-form" > 
+                                                <form onSubmit={handleSubmit} id="contact-form" >
                                                     <div className="row clearfix">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                                                            <input type="name" name="first-name" placeholder="Your Name" required="" aria-required="true"/>
+                                                            <input type="text" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} />
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 ps-xl-0 form-group">
-                                                            <input type="email" name="email" placeholder="Your email" required="" aria-required="true"/>
+                                                            <input type="email" name="email" placeholder="Your email" required value={formData.email} onChange={handleChange} />
                                                         </div>
                                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                            <input type="name" name="last-name" placeholder="Your Name" required="" aria-required="true"/>
+                                                            <input type="text" name="phone" placeholder="Phone Number" required value={formData.phone} onChange={handleChange} />
                                                         </div>
                                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                            <textarea name="message" placeholder="Type message"></textarea>
+                                                            <textarea name="message" placeholder="Type message" required value={formData.message} onChange={handleChange}></textarea>
                                                         </div>
                                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                                            <div className="more__buttons"> 
-                                                                <button className="btn-one" type="submit" name="submit-form">
+                                                            <div className="more__buttons">
+                                                                <button className="btn-one" type="submit" name="submit-form" disabled={status === 'submitting'}>
                                                                     <em>
                                                                         <i></i>
                                                                         <i></i>
@@ -98,9 +138,11 @@ export default function Home() {
                                                                         <i></i>
                                                                         <i></i>
                                                                     </em>
-                                                                <span>Send Your Message </span> 
+                                                                    <span>{status === 'submitting' ? 'Sending...' : 'Send Your Message'} </span>
                                                                 </button>
                                                             </div>
+                                                            {status === 'success' && <p style={{ color: 'green', marginTop: '10px' }}>{responseMsg}</p>}
+                                                            {status === 'error' && <p style={{ color: 'red', marginTop: '10px' }}>{responseMsg}</p>}
                                                         </div>
                                                     </div>
                                                 </form>
@@ -112,17 +154,17 @@ export default function Home() {
                         </div>
                     </section>
                     {/*contact-page end */}
-                    
+
                     {/*google-map */}
                     <section className="google__map">
                         <div className="map__location">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2489.311254698863!2d0.4934654155410975!3d51.39733537961717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1672123672895!5m2!1sen!2sbd" 
-                                width="100%" 
-                                height="450" 
-                                style={{ border: '0' }} 
-                                allowFullScreen 
-                                loading="lazy" 
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47532.66779774635!2d-71.42878770742513!3d41.8795083162791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4431a40306ee1%3A0xe54d24660252119d!2sPawtucket%2C%20RI!5e0!3m2!1sen!2sus!4v1672123672895"
+                                width="100%"
+                                height="450"
+                                style={{ border: '0' }}
+                                allowFullScreen
+                                loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 title="Google Map"
                             ></iframe>

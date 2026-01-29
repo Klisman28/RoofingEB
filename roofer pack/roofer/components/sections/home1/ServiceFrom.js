@@ -2,19 +2,43 @@
 import { useState } from "react";
 
 export default function ServiceFrom() {
-  const [form, setForm] = useState({ username: "", email: "", number: "" });
+  const [loading, setLoading] = useState(false);
+  const [ok, setOk] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setOk(false);
+    setError("");
 
-    const phone = "+50233773326"; // tu WhatsApp con código país, sin + ni guiones
-    const msg =
-      `Request For Service%0A` +
-      `Name: ${form.username}%0A` +
-      `Email: ${form.email}%0A` +
-      `Phone: ${form.number}`;
+    const payload = {
+      name: e.target.username.value,
+      email: e.target.email.value,
+      phone: e.target.number.value,
+      message: e.target.message?.value || "",
+    };
 
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
+    try {
+      const r = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await r.json();
+      setLoading(false);
+
+      if (r.ok) {
+        setOk(true);
+        e.target.reset();
+      } else {
+        setError(data.error || "Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setLoading(false);
+      setError("Failed to send message.");
+    }
   };
 
   return (
@@ -29,43 +53,27 @@ export default function ServiceFrom() {
             <form onSubmit={handleSubmit} id="contact-form">
               <div className="from__inner">
                 <div className="form-group">
-                  <input
-                    type="text"
-                    name="username"
-                    placeholder="Name"
-                    required
-                    value={form.username}
-                    onChange={(e) => setForm({ ...form, username: e.target.value })}
-                  />
+                  <input type="text" name="username" placeholder="Name" required />
                 </div>
                 <div className="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your email"
-                    required
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  />
+                  <input type="email" name="email" placeholder="Your email" required />
                 </div>
                 <div className="form-group">
-                  <input
-                    type="text"
-                    name="number"
-                    placeholder="Phone number"
-                    required
-                    value={form.number}
-                    onChange={(e) => setForm({ ...form, number: e.target.value })}
-                  />
+                  <input type="text" name="number" placeholder="Phone number" required />
                 </div>
+
+
 
                 <div className="message-btn">
                   <div className="service__btn btn-one">
-                    <button className="btn__submit" type="submit">
-                      <span>Submit Now</span>
+                    <button className="btn__submit" type="submit" disabled={loading}>
+                      <span>{loading ? "Sending..." : "Submit Now"}</span>
                     </button>
                   </div>
                 </div>
+
+                {ok && <p style={{ marginTop: 10 }}>✅ Thanks! We received your request.</p>}
+                {error && <p style={{ marginTop: 10 }}>❌ {error}</p>}
               </div>
             </form>
           </div>
@@ -75,4 +83,3 @@ export default function ServiceFrom() {
     </section>
   );
 }
-

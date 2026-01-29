@@ -25,23 +25,22 @@ export default function Home() {
                             <div className="about__three__left">
                             <div className="title">
                                 <div className="sub__title">
-                                <h6>About Rooftox</h6>
+                                <h6>ABOUT E&B ROOFING LLC</h6>
                                 </div>
                                 <div className="main__title">
                                 <h2>
-                                    Experienced &amp; <br />
-                                    Quality More Than <br />
-                                    30 Years
+                                    Experienced, Local Roofing &amp; 
+                                     Exterior Experts for Over    15 Years <br />
+                                 
                                 </h2>
                                 </div>
                             </div>
                             <div className="normal__text">
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Adipiscing integer ultrices suspendisse varius etiam est. Est,
-                                felis, tempus nec vitae orci sodales Metus, velit nec at diam
-                                in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
-                                odio est. Sit semper et velit fusce.
+                                Serving your roofing, siding and window needs for over 15 years.
+
+At E&B ROOFING LLC, we specialize in top-quality roofing, siding and window services designed to protect and enhance your home or business. We are certified with multiple manufacturers, allowing us to offer strong warranty options, fair pricing and energy-efficient solutions tailored to your needs.
+
                                 </p>
                             </div>
                             <div className="engineer__section">
@@ -51,15 +50,15 @@ export default function Home() {
                                     <div className="engineer__content__list">
                                         <ul>
                                         <li>
-                                            <span className="icon-21" /> Innovative Work
-                                            Experience
+                                            <span className="icon-21" /> Roofing – repairs and full replacements  
                                         </li>
                                         <li>
-                                            <span className="icon-21" /> 100% Satisfaction
-                                            Guarantee
+                                            <span className="icon-21" />  Windows – energy-efficient replacement windows  
+
                                         </li>
                                         <li>
-                                            <span className="icon-21" /> Quality Expert Engineer
+                                            <span className="icon-21" />  Siding – vinyl and other exterior options  
+
                                         </li>
                                         </ul>
                                     </div>
@@ -70,10 +69,15 @@ export default function Home() {
                                     <div className="engineer__content__list">
                                         <ul>
                                         <li>
-                                            <span className="icon-21" /> Certified Company
+                                            <span className="icon-21" /> Gutters – seamless gutters and gutter guards  
+
                                         </li>
                                         <li>
-                                            <span className="icon-21" /> Roof Renovation
+                                            <span className="icon-21" /> Skylights – installation and leak repairs  
+                                        </li>
+                                        <li>
+                                            <span className="icon-21" /> Painting – exterior painting and trim work
+
                                         </li>
                                         </ul>
                                     </div>
@@ -81,7 +85,7 @@ export default function Home() {
                                 </div>
                                 </div>
                                 <div className="about__btn">
-                                <Link className="btn-one" href="/about">
+                                <Link className="btn-one" href="/contact">
                                     <em>
                                     <i />
                                     <i />
@@ -91,7 +95,7 @@ export default function Home() {
                                     <i />
                                     <i />
                                     </em>
-                                    <span>Read More</span>
+                                    <span>REQUEST A FREE ESTIMATE</span>
                                 </Link>
                                 </div>
                             </div>
@@ -119,7 +123,7 @@ export default function Home() {
                                     data-wow-duration="1500ms"
                                     >
                                     <img
-                                        src="assets/images/resource/about-three-01.png"
+                                        src="assets/images/resource/about1.jpg"
                                         alt=""
                                     />
                                     </figure>
@@ -127,7 +131,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="two__img p_absolute">
-                                <img src="assets/images/resource/about-three-02.png" alt="" />
+                                <img src="assets/images/resource/about2.jpg" alt="" />
                             </div>
                             <div
                                 className="about__two__expericence"
@@ -136,7 +140,7 @@ export default function Home() {
                                 }}
                             >
                                 <div className="about__two__text">
-                                <h2>20 </h2>
+                                <h2>15 </h2>
                                 <span>Years of Expericence</span>
                                 </div>
                             </div>
@@ -157,7 +161,7 @@ export default function Home() {
                             <h6>History</h6>
                         </div>
                         <div className="main__title">
-                            <h2> Roofing Service History </h2>
+                            <h2> Roofing & Exterior Service History </h2>
                         </div>
                         </div>
                         <div className="hisyory__tab__section">
@@ -165,22 +169,16 @@ export default function Home() {
                             <div className="tab-btn-box p_relative">
                             <ul className="tab-btns tab-buttons clearfix">
                                 <li className={activeIndex == 1 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(1)}>
-                                <span className="tab___btn"> 1998 </span>
+                                <span className="tab___btn"> 2009 </span>
                                 </li>
                                 <li className={activeIndex == 2 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(2)}>
-                                <span className="tab___btn"> 2005</span>
+                                <span className="tab___btn"> 2013</span>
                                 </li>
                                 <li className={activeIndex == 3 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(3)}>
-                                <span className="tab___btn"> 2010 </span>
+                                <span className="tab___btn"> 2018 </span>
                                 </li>
                                 <li className={activeIndex == 4 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(4)}>
-                                <span className="tab___btn"> 2015 </span>
-                                </li>
-                                <li className={activeIndex == 5 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(5)}>
-                                <span className="tab___btn"> 2020 </span>
-                                </li>
-                                <li className={activeIndex == 6 ? "tab-btn active-btn" : "tab-btn"} onClick={() => handleOnClick(6)}>
-                                <span className="tab___btn"> 2022 </span>
+                                <span className="tab___btn"> 2023 </span>
                                 </li>
                             </ul>
                             </div>
@@ -202,7 +200,7 @@ export default function Home() {
                                         <div className="tab__left__content">
                                         <figure className="image">
                                             <img
-                                            src="assets/images/resource/service-01.png"
+                                            src="assets/images/resource/roof-replacement-pawtucket-ri.jpg"
                                             alt=""
                                             />
                                         </figure>
@@ -210,35 +208,28 @@ export default function Home() {
                                     </div>
                                     <div className="col-lg-6 col-md-12 ps-xl-4">
                                         <div className="tab__right__content">
-                                        <h4>Roofing Layer</h4>
+                                        <h4>E&B ROOFING LLC is founded</h4>
                                         <div className="tab__text">
                                             <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Adipiscing integer ultrices suspendisse varius
-                                            etiam est. Est, felis, tempus nec vitae orci sodales
-                                            Metus, velit nec at diam in sed. Massa dui ipsum
-                                            ornare sagittis dolor sagittis amet odio est. Sit
-                                            semper et velit fusce.
+                                           Started as a small roofing crew helping homeowners in Pawtucket, RI with shingle roof repairs and replacements. From day one, our focus was simple: honest recommendations, clean job sites and work we’d be proud to put our name on.
                                             </p>
                                         </div>
                                         <div className="tab__list">
-                                            <ul>
+                                          <ul>
                                             <li>
-                                                <span className="icon-21" /> Innovative Work
-                                                Experience{" "}
+                                                <span className="icon-21" /> Local residential shingle roofs in Pawtucket, RI
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> 100% Satisfaction
-                                                Guarantee{" "}
+                                                <span className="icon-21" /> Owner on site for every project
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Quality Expert Engineer{" "}
+                                                <span className="icon-21" /> Focused on leak repairs and full roof replacements
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Certified Company{" "}
+                                                <span className="icon-21" />Clean job sites and respectful crews
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Roof Renovation{" "}
+                                                <span className="icon-21" /> First customers coming 100% from word-of-mouth
                                             </li>
                                             </ul>
                                         </div>
@@ -252,7 +243,7 @@ export default function Home() {
                                         <div className="tab__left__content">
                                         <figure className="image">
                                             <img
-                                            src="assets/images/resource/service-02.png"
+                                            src="assets/images/resource/siding-windows-home-attleboro-ma.jpg"
                                             alt=""
                                             />
                                         </figure>
@@ -260,35 +251,28 @@ export default function Home() {
                                     </div>
                                     <div className="col-lg-6 col-md-12 px-xl-4">
                                         <div className="tab__right__content">
-                                        <h4>Damage Repair</h4>
+                                        <h4>From Roofing Only to Full Exterior Services</h4>
                                         <div className="tab__text">
                                             <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Adipiscing integer ultrices suspendisse varius
-                                            etiam est. Est, felis, tempus nec vitae orci sodales
-                                            Metus, velit nec at diam in sed. Massa dui ipsum
-                                            ornare sagittis dolor sagittis amet odio est. Sit
-                                            semper et velit fusce.
+                                            Started as a small roofing crew helping homeowners in Pawtucket, RI with shingle roof repairs and replacements. From day one, our focus was simple: honest recommendations, clean job sites and work we’d be proud to put our name on.
                                             </p>
                                         </div>
                                         <div className="tab__list">
                                             <ul>
                                             <li>
-                                                <span className="icon-21" /> Innovative Work
-                                                Experience{" "}
+                                                <span className="icon-21" />Added siding, window and gutter installation
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> 100% Satisfaction
-                                                Guarantee{" "}
+                                                <span className="icon-21" /> Completed first full exterior renovation projects
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Quality Expert Engineer{" "}
+                                                <span className="icon-21" /> Invested in better safety equipment and tools
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Certified Company{" "}
+                                                <span className="icon-21" />Built long-term relationships with repeat customers
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Roof Renovation{" "}
+                                                <span className="icon-21" /> Started offering simple maintenance plans
                                             </li>
                                             </ul>
                                         </div>
@@ -302,7 +286,7 @@ export default function Home() {
                                         <div className="tab__left__content">
                                         <figure className="image">
                                             <img
-                                            src="assets/images/resource/service-03.png"
+                                            src="assets/images/resource/neighborhood-roofs-rhode-island.jpg"
                                             alt=""
                                             />
                                         </figure>
@@ -310,15 +294,11 @@ export default function Home() {
                                     </div>
                                     <div className="col-lg-6 col-md-12 ps-xl-4">
                                         <div className="tab__right__content">
-                                        <h4>Roof Cornering</h4>
+                                        <h4>Growing to Serve All Rhode Island & Southeastern MA</h4>
                                         <div className="tab__text">
                                             <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Adipiscing integer ultrices suspendisse varius
-                                            etiam est. Est, felis, tempus nec vitae orci sodales
-                                            Metus, velit nec at diam in sed. Massa dui ipsum
-                                            ornare sagittis dolor sagittis amet odio est. Sit
-                                            semper et velit fusce.
+                                            With a larger team and more equipment, we began serving homeowners and businesses across all of Rhode Island and Southeastern Massachusetts. Drone inspections, better safety practices and a dedicated project manager on each job helped us deliver faster, more efficient projects without sacrificing quality.
+
                                             </p>
                                         </div>
                                         <div className="tab__list">
@@ -352,7 +332,7 @@ export default function Home() {
                                         <div className="tab__left__content">
                                         <figure className="image">
                                             <img
-                                            src="assets/images/resource/service-01.png"
+                                            src="assets/images/resource/new-roof-installation-eb-roofing.jpg"
                                             alt=""
                                             />
                                         </figure>
@@ -360,35 +340,28 @@ export default function Home() {
                                     </div>
                                     <div className="col-lg-6 col-md-12 ps-xl-4">
                                         <div className="tab__right__content">
-                                        <h4>Siding Install</h4>
+                                        <h4>Certified Installers with Strong Warranty Options</h4>
                                         <div className="tab__text">
                                             <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Adipiscing integer ultrices suspendisse varius
-                                            etiam est. Est, felis, tempus nec vitae orci sodales
-                                            Metus, velit nec at diam in sed. Massa dui ipsum
-                                            ornare sagittis dolor sagittis amet odio est. Sit
-                                            semper et velit fusce.
+                                            Today, E&B ROOFING LLC is certified with multiple manufacturers and fully licensed and insured in both RI and MA. We offer strong product and labor warranty options, 24/7 emergency tarping and leak response, and a full line of exterior services including roofing, siding, windows, gutters, skylights and painting.
                                             </p>
                                         </div>
                                         <div className="tab__list">
                                             <ul>
                                             <li>
-                                                <span className="icon-21" /> Innovative Work
-                                                Experience{" "}
+                                                <span className="icon-21" />Certified with multiple roofing & siding manufacturers
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> 100% Satisfaction
-                                                Guarantee{" "}
+                                                <span className="icon-21" />Licensed & Insured – MA HIC #212610 · RI Reg. #GC-47693
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Quality Expert Engineer{" "}
+                                                <span className="icon-21" /> Enhanced product and labor warranty options
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Certified Company{" "}
+                                                <span className="icon-21" />Full line of services: roofing, siding, windows, gutters, skylights & painting
                                             </li>
                                             <li>
-                                                <span className="icon-21" /> Roof Renovation{" "}
+                                                <span className="icon-21" /> Bilingual support (English/Spanish) and fair, transparent pricing
                                             </li>
                                             </ul>
                                         </div>
@@ -521,7 +494,7 @@ export default function Home() {
                             </div>
                             <div className="funfact__text">
                                 <div className="count-outer count-box">
-                                <CounterUp end={932} />
+                                <CounterUp end={500} />
                                 <span>+</span>
                                 </div>
                                 <p>Project Complete</p>
@@ -539,10 +512,10 @@ export default function Home() {
                             </div>
                             <div className="funfact__text">
                                 <div className="count-outer count-box">
-                                <CounterUp end={90} />
+                                <CounterUp end={10} />
                                 <span>+</span>
                                 </div>
-                                <p>Experience Staff</p>
+                                <p>Experienced Roofing & Exterior Specialists</p>
                             </div>
                             </div>
                         </div>
@@ -557,10 +530,10 @@ export default function Home() {
                             </div>
                             <div className="funfact__text">
                                 <div className="count-outer count-box">
-                                <CounterUp end={20} />
+                                <CounterUp end={15} />
                                 <span>+</span>
                                 </div>
-                                <p>Awards Win</p>
+                                <p>Years of Combined Experience</p>
                             </div>
                             </div>
                         </div>
@@ -575,10 +548,10 @@ export default function Home() {
                             </div>
                             <div className="funfact__text">
                                 <div className="count-outer count-box">
-                                <CounterUp end={620} />
+                                <CounterUp end={100} />
                                 <span>+</span>
                                 </div>
-                                <p>Satisfied Clients</p>
+                                <p>Satisfied Homeowners & Businesses</p>
                             </div>
                             </div>
                         </div>
@@ -607,21 +580,18 @@ export default function Home() {
                             <div className="choose__two__left">
                             <div className="title">
                                 <div className="sub__title">
-                                <h6>Why Choose Rooftox</h6>
+                                <h6>Why Choose E&B ROOFING LLC</h6>
                                 </div>
                                 <div className="main__title">
                                 <h2>
-                                    Why Choose RoofTox <br /> For Roofing
+                                    Why Choose E&B ROOFING LLC <br /> For Roofing
                                 </h2>
                                 </div>
                             </div>
                             <div className="roofer__two__text">
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Adipiscing integer ultrices suspendisse varius etiam est. Est,
-                                felis, tempus nec vitae orci sodales Metus, velit nec at diam
-                                in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
-                                odio est. Sit semper et velit fusce.
+                                Choosing the right contractor can make all the difference in how long your roof and exterior will last. At E&B ROOFING LLC, we combine hands-on experience with high-quality materials and clear communication. From the first inspection to the final clean-up, our team treats your property like it was our own.
+
                                 </p>
                             </div>
                             <div className="roofer__list__content">
@@ -630,13 +600,12 @@ export default function Home() {
                                     <div className="roofer__two__list">
                                     <ul>
                                         <li>
-                                        <span className="icon-41" /> Expert Engineers
+                                        <span className="icon-41" /> Licensed & Insured – MA HIC #212610 · RI Reg. #GC-47693  
+
                                         </li>
                                         <li>
-                                        <span className="icon-41" /> Award Wining Company
-                                        </li>
+                                        <span className="icon-41" />Over 15 years serving Rhode Island & Southeastern Massachusetts                                          </li>
                                         <li>
-                                        <span className="icon-41" /> Required Works
                                         </li>
                                     </ul>
                                     </div>
@@ -645,10 +614,11 @@ export default function Home() {
                                     <div className="roofer__two__list">
                                     <ul>
                                         <li>
-                                        <span className="icon-41" /> Quality Materials
+                                        <span className="icon-41" />Fair, transparent pricing and detailed written estimates  
+
                                         </li>
                                         <li>
-                                        <span className="icon-41" /> Fully insured
+                                        <span className="icon-41" />  Roofing, siding, windows, gutters, skylights and painting from one trusted contractor 
                                         </li>
                                     </ul>
                                     </div>
@@ -664,7 +634,7 @@ export default function Home() {
                             data-wow-duration="1500ms"
                             >
                             <figure className="image">
-                                <img src="assets/images/resource/choose-two.png" alt="" />
+                                <img width={611} height={572} src="assets/images/resource/serviceclient.jpg" alt="" />
                             </figure>
                             </div>
                         </div>
@@ -674,7 +644,7 @@ export default function Home() {
                 </section>
                 {/* choose-section-two-end */}
 
-                {/* team-section */}
+                {/* team-section 
                 <section className="team__section three about__page p_relative see__pad">
                     <div className="auto_container">
                     <div className="title text-center">
@@ -850,7 +820,7 @@ export default function Home() {
                         </div>
                     </div>
                     </div>
-                </section>
+                </section> */}
                 {/* team-section-end */}
 
                 {/* testimonials-about */}

@@ -7,13 +7,13 @@ export default function About() {
             <section className="about__section p_relative">
                 <div className="anim-icon">
                     <div className="parallax-scene parallax-scene-1" >
-                        <div data-depth="0.30" className="icon layer-bg" style={{backgroundImage:'url(assets/images/icons/icon-01.svg)'}}></div>
+                        <div data-depth="0.30" className="icon layer-bg" style={{ backgroundImage: 'url(assets/images/icons/icon-01.svg)' }}></div>
                     </div>
                     <div className="parallax-scene parallax-scene-2" >
-                        <div data-depth="0.30" className="icon layer-bg" style={{backgroundImage:'url(assets/images/icons/icon-01.svg)'}}></div>
+                        <div data-depth="0.30" className="icon layer-bg" style={{ backgroundImage: 'url(assets/images/icons/icon-01.svg)' }}></div>
                     </div>
-                    <div className="icon icon-02 wow slideInRight animated" data-wow-delay="100ms" data-wow-duration="1500ms" style={{backgroundImage:'url(assets/images/shape/shape-12.png)'}}></div>
-                    <div className="icon icon-03 wow slideInLeft animated" data-wow-delay="100ms" data-wow-duration="1500ms" style={{backgroundImage:'url(assets/images/shape/shape-13.png)'}}></div>
+                    <div className="icon icon-02 wow slideInRight animated" data-wow-delay="100ms" data-wow-duration="1500ms" style={{ backgroundImage: 'url(assets/images/shape/shape-12.png)' }}></div>
+                    <div className="icon icon-03 wow slideInLeft animated" data-wow-delay="100ms" data-wow-duration="1500ms" style={{ backgroundImage: 'url(assets/images/shape/shape-13.png)' }}></div>
                 </div>
                 <div className="auto_container">
                     <div className="about__section__content">
@@ -26,7 +26,7 @@ export default function About() {
                                                 <div className="inner__box">
                                                     <div className="image__box">
                                                         <figure className="image">
-                                                            <img src="assets/images/resource/about-01.png" alt=""/>
+                                                            <img src="assets/images/resource/eb-roofing-crew-working.jpg" alt="E&B Roofing Crew Installing Shingles" />
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -37,7 +37,7 @@ export default function About() {
                                                 <div className="inner__box">
                                                     <div className="image__box">
                                                         <figure className="image">
-                                                            <img src="assets/images/resource/about-02.png" alt=""/>
+                                                            <img src="assets/images/resource/certainteed-roofing-materials-ri.jpg" alt="CertainTeed Roofing Materials in Rhode Island" />
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -46,17 +46,17 @@ export default function About() {
                                                 <div className="inner__box">
                                                     <div className="image__box">
                                                         <figure className="image">
-                                                            <img src="assets/images/resource/about-03.png" alt=""/>
+                                                            <img src="assets/images/resource/flat-roof-replacement-project.jpg" alt="Flat Roof Replacement Project" />
                                                         </figure>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="expericence" style={{backgroundImage:'url(assets/images/shape/shape-14.png)'}}>
+                                    <div className="expericence" style={{ backgroundImage: 'url(assets/images/shape/shape-14.png)' }}>
                                         <div className="expericence__text">
-                                            <h2>20 </h2>
-                                            <span>Years of Expericence</span>
+                                            <h2>15+</h2>
+                                            <span>Years of Experience</span>
                                         </div>
                                     </div>
                                 </div>
@@ -65,19 +65,16 @@ export default function About() {
                                 <div className="about__right__section">
                                     <div className="title">
                                         <div className="sub__title">
-                                            <h6>About Rooftox</h6>
+                                            <h6>About E&B Roofing LLC</h6>
                                         </div>
                                         <div className="main__title">
-                                            <h2>Experienced &amp; <br/>
-                                                Quality More Than <br/>
-                                                30 Years</h2>
+                                            <h2>Dedicated to Quality <br />
+                                                Craftsmanship Since <br />
+                                                2009</h2>
                                         </div>
                                     </div>
                                     <div className="normal__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer
-                                            ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae orci sodales
-                                            Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis
-                                            amet odio est. Sit semper et velit fusce.</p>
+                                        <p>E&B ROOFING LLC is a family-owned and operated licensed contractor creating happy customers across Rhode Island and Southeastern Massachusetts. We specialize in roofing, siding, windows, and gutters, delivering honest work at fair prices.</p>
                                     </div>
                                     <div className="engineer__section">
                                         <div className="row">
@@ -88,8 +85,7 @@ export default function About() {
                                                     </div>
                                                     <div className="engineer__text">
                                                         <h5> Quality Materials</h5>
-                                                        <p> Amet minim mollit deserunt
-                                                        ulamco sit enim.</p>
+                                                        <p> We partner with top manufacturers to ensure durable, long-lasting results for your home.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -99,9 +95,8 @@ export default function About() {
                                                         <span className="icon-7"></span>
                                                     </div>
                                                     <div className="engineer__text">
-                                                        <h5> Expert Engineer</h5>
-                                                        <p> Amet minim mollit deserunt
-                                                        ulamco sit enim.</p>
+                                                        <h5> Licensed Experts</h5>
+                                                        <p> Fully licensed (MA #212610, RI #GC-47693) and insured for your peace of mind.</p>
                                                     </div>
                                                 </div>
                                             </div>

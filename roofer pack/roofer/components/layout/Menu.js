@@ -75,16 +75,16 @@ export default function Menu() {
                                                 
                                            
                                         </li>
-                                        <li><Link href="/about">About Us</Link></li>
-                                        <li className="dropdown"><Link href="#">Services</Link>
+                                        <li><Link href="/about">About</Link></li>
+                                        <li className=""><Link href="services">Roofing Services</Link>
                                             <ul>
                                                 <li><Link href="/services">Services</Link></li>
                                                 <li><Link href="/services-single">Services Single</Link></li>
                                                 <li><Link href="/services-details">Services Details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="dropdown"><Link href="#">Pages</Link>
-                                            <ul>
+                                        <li className=""><Link href="/project-2">Our Work</Link>
+                                           {/** <ul>
                                                 <li className="dropdown"><Link href="#">Team</Link>
                                                     <ul>
                                                         <li><Link href="/team-1">Team 1</Link></li>
@@ -98,14 +98,14 @@ export default function Menu() {
                                                         <li><Link href="/testimonial-2">Testimonial 2</Link></li>
                                                     </ul>
                                                 </li>
-                                                <li className="dropdown"><Link href="#">Project</Link>
+                                                <li className="dropdown"><Link href="#">Review</Link>
                                                     <ul>
                                                         <li><Link href="/project-1">Project 1</Link></li>
                                                         <li><Link href="/project-2">Project 2</Link></li>
                                                         <li><Link href="/project-details">Project Details</Link></li>
                                                     </ul>
                                                 </li>
-                                                <li className="dropdown"><Link href="#">Shop</Link>
+                                                <li className="dropdown"><Link href="#">Store</Link>
                                                     <ul>
                                                         <li><Link href="/shop">Shop</Link></li>
                                                         <li><Link href="/shop-details">Shop Details</Link></li>
@@ -116,9 +116,9 @@ export default function Menu() {
                                                 <li><Link href="/faq">FAQ</Link></li>
                                                 <li><Link href="/pricing">Pricing</Link></li>
                                                 <li><Link href="/error">Error</Link></li>
-                                            </ul>
+                                            </ul> */} 
                                         </li>
-                                        <li className="dropdown"><Link href="#">News</Link>
+                                        <li className=""><Link href="/testimonial-2">Review</Link>
                                             <ul>
                                                 <li><Link href="/blog-grid">Blog Grid</Link></li>
                                                 <li><Link href="/blog-standard">Blog Standard</Link></li>

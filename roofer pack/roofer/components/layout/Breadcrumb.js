@@ -6,7 +6,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
             
             {/*page-title */}
             <section className="page__title p_relative">
-                <div className="bg-layer parallax-bg" data-parallax='{"y": 20}' style={{backgroundImage: 'url(assets/images/resource/page-title.png)'}}>
+                <div className="bg-layer parallax-bg" data-parallax='{"y": 20}' style={{backgroundImage: 'url(assets/images/resource/title2.png)'}}>
                 </div>
                 <div className="auto_container text-center">
                     <div className="content-box p_relative">
