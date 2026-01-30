@@ -43,10 +43,10 @@ export default function Home() {
             rating: 5
         },
         {
-            author_name: "Kristine Pike",
-            text: "E&B Roofing/ Brian and his crew just finished my new roof!  The roof looks wonderful and the crew were friendly and cleaned up before they left the job. The price was competitive with the other quotes I had received. I would highly recommend Brian and his company to anyone interested in roofing needs!I will be using Brian for the gutter installation I’m planning in the spring. Thank you Brian",
+            author_name: "Jeff S",
+            text: "Brian and his crew did a great job replacing the roof on our house and detached shed. He provided a competitive quote and we were even able to have gutter guards installed as part of the process. They were polite, courteous and did a great job cleaning up. Definitely recommend to anyone looking for a roof replacement.",
             profile_photo_url: "https://ui-avatars.com/api/?name=Luke+Scholfield&background=FF5722&color=fff", // Orange
-            relative_time_description: "a month ago",
+            relative_time_description: "Hace 5 meses",
             rating: 5
         }
     ];
@@ -91,7 +91,7 @@ export default function Home() {
                                                             <ul style={{ display: 'flex', gap: '5px', padding: 0, listStyle: 'none' }}>
                                                                 {[...Array(5)].map((_, i) => (
                                                                     <li key={i}>
-                                                                        <svg width="18" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg width="18" height="100" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFAA00" />
                                                                         </svg>
                                                                     </li>

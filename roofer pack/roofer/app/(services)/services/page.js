@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Our Services">
+            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Roofing Services">
                 <div>
                     {/*service-section-two */}
                     <section className="service__page p_relative see__pad">
@@ -19,7 +19,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-01.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/roofing_services.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content">
@@ -37,9 +37,7 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>From complete asphalt shingle roof replacements to emergency leak repairs and tarping (24/7). We provide free, honest inspections.</p>
                                                     </div>
-                                                    <div className="more__btn">
-                                                        <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -49,7 +47,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-02.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/siding_installation.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content">
@@ -67,9 +65,7 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>Transform your home's appearance and energy efficiency with high-quality vinyl siding and exterior cladding solutions.</p>
                                                     </div>
-                                                    <div className="more__btn">
-                                                        <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +75,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-03.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/windwo_replacement.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content" >
@@ -97,9 +93,7 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>Upgrade to energy-efficient replacement windows. Professional installation that improves home comfort and lowers potential energy bills.</p>
                                                     </div>
-                                                    <div className="more__btn">
-                                                        <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +103,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-04.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/Gutters&Guards.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content">
@@ -127,9 +121,7 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>Protect your foundation with seamless gutters and gutter guards. We handle installation, repair, and cleaning.</p>
                                                     </div>
-                                                    <div className="more__btn">
-                                                        <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +131,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-05.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/Skylights&Chimneys.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content">
@@ -157,9 +149,7 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>Expert installation and repair for skylights and chimneys. We fix leaks, replace flashing, and ensure proper sealing.</p>
                                                     </div>
-                                                    <div className="more__btn">
-                                                        <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +159,7 @@ export default function Home() {
                                             <div className="inner__box">
                                                 <div className="image__box">
                                                     <figure className="image">
-                                                        <Link href="/service-details"><img src="assets/images/service/service-06.png" alt="" /></Link>
+                                                        <Link href="/service-details"><img src="assets/images/service/Exterior_painting.jpg" alt="" /></Link>
                                                     </figure>
                                                 </div>
                                                 <div className="lower__content" >
@@ -187,9 +177,10 @@ export default function Home() {
                                                     <div className="service__text">
                                                         <p>Revitalize your property with professional exterior painting. We cover trim work, siding painting, and detail finishing.</p>
                                                     </div>
-                                                    <div className="more__btn">
+                                                    {/*  <div className="more__btn">
                                                         <Link href="/service-details">Read More <span className="icon-53"></span> <span className="icon-52"></span></Link>
                                                     </div>
+                                                     */}
                                                 </div>
                                             </div>
                                         </div>

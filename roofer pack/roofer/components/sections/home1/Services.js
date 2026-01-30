@@ -82,7 +82,7 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/resource/service-01.png"
+                                                                src="assets/images/service/roofing_services.jpg"
                                                                 alt=""
                                                             />
                                                         </figure>
@@ -135,7 +135,7 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/resource/service-02.png"
+                                                                src="assets/images/service/siding_installation.jpg"
                                                                 alt=""
                                                             />
                                                         </figure>
@@ -188,7 +188,7 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/resource/service-03.png"
+                                                                src="assets/images/service/windwo_replacement.jpg"
                                                                 alt=""
                                                             />
                                                         </figure>
@@ -241,7 +241,7 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/resource/service-04.png"
+                                                                src="assets/images/service/Skylights&Chimneys.jpg"
                                                                 alt=""
                                                             />
                                                         </figure>
