@@ -64,11 +64,11 @@ export default function Footer2() {
                                                         <span className="contact_label" >Service Area: </span>
                                                         <span className="contact_value">
                                                             <p className="text-white">
-                                                            Pawtucket · Cranston · East Providence · Central Falls
-                                                            Attleboro · North Attleborough · Seekonk · Taunton
-                                                            Mansfield · Easton · Rehoboth
+                                                                Pawtucket · Cranston · East Providence · Central Falls
+                                                                Attleboro · North Attleborough · Seekonk · Taunton
+                                                                Mansfield · Easton · Rehoboth
                                                             </p>
-                                                            
+
                                                         </span>
                                                     </li>
 
@@ -104,21 +104,12 @@ export default function Footer2() {
                                             </div>
                                             <div className="widget_content">
                                                 <ul className="links_list clearfix">
-                                                    <li>
-                                                        <Link href="/about">About Us</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/service">Services</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Case</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Roof Repair</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Contact Us</Link>
-                                                    </li>
+                                                    <li><Link href="/">Home</Link></li>
+                                                    <li><Link href="/about">About</Link></li>
+                                                    <li><Link href="/services">Roofing Services</Link></li>
+                                                    <li><Link href="/project-2">Our Work</Link></li>
+                                                    <li><Link href="/testimonial-2">Review</Link></li>
+                                                    <li><Link href="/contact">Contact</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

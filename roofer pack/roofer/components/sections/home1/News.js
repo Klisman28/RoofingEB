@@ -47,7 +47,7 @@ export default function News() {
                         <div className="row">
                             <div className="col-xl-6 col-lg-12">
                                 <div className="news_letter_left p_relative">
-                                    <h3>Our Newsletters</h3>
+                                    <h3>Unlock Roofing Discounts</h3>
                                     <div className="form-inner p_relative">
                                         <form onSubmit={handleSubmit} className="subscribe-form">
                                             <div className="form-group">
@@ -60,7 +60,7 @@ export default function News() {
                                                     onChange={(e) => setEmail(e.target.value)}
                                                 />
                                                 <button type="submit" className="btn-two" disabled={status === 'submitting'}>
-                                                    {status === 'submitting' ? '...' : 'Subscribe Now'}
+                                                    {status === 'submitting' ? '...' : 'Get My Free Tips'}
                                                 </button>
                                             </div>
                                             {message && <div style={{ marginTop: '10px', color: status === 'success' ? 'white' : 'red' }}>{message}</div>}

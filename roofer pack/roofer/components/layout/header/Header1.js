@@ -12,13 +12,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
           <div className="header_top">
             <div className="header_top_left">
               <ul className="top_left">
-                <li  style={{ fontSize: '13px' }}><span className="icon-30"></span> &nbsp;Based in Pawtucket, RI · Serving RI & Southeastern MA 
+                <li style={{ fontSize: '13px' }}><span className="icon-30"></span> &nbsp;Based in Pawtucket, RI · Serving RI & Southeastern MA
                 </li>
-                <li  style={{ fontSize: '13px' }}>
-                 <span className="icon-29"> <Link href="mailto:E_broofing@yahoo.com">E_broofing@yahoo.com &nbsp;&nbsp;</Link></span> <span className="icon-36"> <Link href="tel:+774-300-1932">(774) 300-1932</Link> </span>
-              
+                <li style={{ fontSize: '13px' }}>
+                  <span className="icon-29"> <Link href="mailto:E_broofing@yahoo.com">E_broofing@yahoo.com &nbsp;&nbsp;</Link></span> <span className="icon-36"> <Link href="tel:+774-300-1932">(774) 300-1932</Link> </span>
+
                 </li>
-                
+
 
               </ul>
             </div>
@@ -27,8 +27,8 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <ul className="top_right">
                   <li className="login__border" style={{ fontSize: '13px' }}>
                     <Link href="/login">     🛡️ Licensed &amp; Insured · MA HIC #212610 · RI Reg. #GC-47693
-</Link>
-              
+                    </Link>
+
 
                   </li>
                   <li>

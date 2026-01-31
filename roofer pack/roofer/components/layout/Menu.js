@@ -66,25 +66,25 @@ export default function Menu() {
                 </li> 
                 <li><Link href="/contact">Contact</Link></li>
             </ul> */}
-                                    <ul className="navigation clearfix">
-                                        <li className=""><Link href="/">Home</Link>
-                                        
-                                               
-                                              
-                                            
-                                                
-                                           
-                                        </li>
-                                        <li><Link href="/about">About</Link></li>
-                                        <li className=""><Link href="services">Roofing Services</Link>
-                                            <ul>
-                                                <li><Link href="/services">Services</Link></li>
-                                                <li><Link href="/services-single">Services Single</Link></li>
-                                                <li><Link href="/services-details">Services Details</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className=""><Link href="/project-2">Our Work</Link>
-                                           {/** <ul>
+            <ul className="navigation clearfix">
+                <li className=""><Link href="/">Home</Link>
+
+
+
+
+
+
+                </li>
+                <li><Link href="/about">About</Link></li>
+                <li className=""><Link href="/services">Roofing Services</Link>
+                    <ul>
+                        <li><Link href="/services">Services</Link></li>
+                        <li><Link href="/services-single">Services Single</Link></li>
+                        <li><Link href="/services-details">Services Details</Link></li>
+                    </ul>
+                </li>
+                <li className=""><Link href="/project-2">Our Work</Link>
+                    {/** <ul>
                                                 <li className="dropdown"><Link href="#">Team</Link>
                                                     <ul>
                                                         <li><Link href="/team-1">Team 1</Link></li>
@@ -116,17 +116,17 @@ export default function Menu() {
                                                 <li><Link href="/faq">FAQ</Link></li>
                                                 <li><Link href="/pricing">Pricing</Link></li>
                                                 <li><Link href="/error">Error</Link></li>
-                                            </ul> */} 
-                                        </li>
-                                        <li className=""><Link href="/testimonial-2">Review</Link>
-                                            <ul>
-                                                <li><Link href="/blog-grid">Blog Grid</Link></li>
-                                                <li><Link href="/blog-standard">Blog Standard</Link></li>
-                                                <li><Link href="/blog-details">Blog Details</Link></li>
-                                            </ul>
-                                        </li>  
-                                        <li><Link href="/contact"> Contact </Link></li>     
-                                    </ul>
+                                            </ul> */}
+                </li>
+                <li className=""><Link href="/testimonial-2">Review</Link>
+                    <ul>
+                        <li><Link href="/blog-grid">Blog Grid</Link></li>
+                        <li><Link href="/blog-standard">Blog Standard</Link></li>
+                        <li><Link href="/blog-details">Blog Details</Link></li>
+                    </ul>
+                </li>
+                <li><Link href="/contact"> Contact </Link></li>
+            </ul>
         </>
     )
 }

@@ -10,14 +10,14 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Portfolio Classic">
-                
+            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Our Work">
+
                 {/* portfolio-section */}
                 <section className="portfolio style__one two see__pad p_relative ">
                     <div className="auto_container">
-                    <div className="sortable-masonry">
-                        <PortfolioFilter2/>
-                    </div>
+                        <div className="sortable-masonry">
+                            <PortfolioFilter2 />
+                        </div>
                     </div>
                 </section>
                 {/* project-style-1 */}

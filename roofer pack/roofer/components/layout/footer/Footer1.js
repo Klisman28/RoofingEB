@@ -13,7 +13,7 @@ export default function Footer1() {
                                     <div className="logo-widget">
                                         <figure className="footer-logo">
                                             <Link href="/">
-                                                <img src="assets/images/footer-logo.png" alt="" style={{ width: 160, height: "auto" }} />
+                                                <img src="assets/images/white-logo.png" alt="" style={{ width: 160, height: "auto" }} />
                                             </Link>
                                         </figure>
                                     </div>
@@ -104,21 +104,12 @@ export default function Footer1() {
                                             </div>
                                             <div className="widget_content">
                                                 <ul className="links_list clearfix">
-                                                    <li>
-                                                        <Link href="/about">About Us</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/service">Services</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Case</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Roof Repair</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/">Contact Us</Link>
-                                                    </li>
+                                                    <li><Link href="/">Home</Link></li>
+                                                    <li><Link href="/about">About</Link></li>
+                                                    <li><Link href="/services">Roofing Services</Link></li>
+                                                    <li><Link href="/project-2">Our Work</Link></li>
+                                                    <li><Link href="/testimonial-2">Review</Link></li>
+                                                    <li><Link href="/contact">Contact</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

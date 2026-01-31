@@ -4,7 +4,7 @@ import Quality from "@/components/sections/home1/Quality"
 import About from "@/components/sections/home1/About"
 import Banner from "@/components/sections/home1/Banner"
 import Services from "@/components/sections/home1/Services"
-import Blog from "@/components/sections/home1/Blog"
+
 import Funfacts from "@/components/sections/home1/Funfacts"
 import Roofer from "@/components/sections/home1/Roofer"
 import Portfolio from "@/components/sections/home1/Portfolio"
@@ -25,11 +25,12 @@ export default function Home() {
                 <Services />
                 <Funfacts />
                 <Roofer />
-                <Portfolio />
-                <Testimonial />
                 <Workprocess />
                 <Brand />
-                <Blog />
+                <Portfolio />
+                <Testimonial />
+
+
                 <News />
             </Layout>
         </>

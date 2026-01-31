@@ -1,7 +1,5 @@
 {
-  "/(pages)/(testimonials)/testimonial-2/page": "app/(pages)/(testimonials)/testimonial-2/page.js",
-  "/about/page": "app/about/page.js",
-  "/(services)/services/page": "app/(services)/services/page.js",
-  "/(pages)/(shop)/shop/page": "app/(pages)/(shop)/shop/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js"
 }

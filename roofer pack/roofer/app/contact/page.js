@@ -47,7 +47,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="CONTACT US">
+            <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Contact Us">
                 <div>
                     {/*contact-page */}
                     <section className="contact__page see__pad p_relative">

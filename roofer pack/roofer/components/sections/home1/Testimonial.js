@@ -66,7 +66,6 @@ export default function Testimonial() {
               data-wow-duration="1500ms"
             >
               <figure className="image">
-                <img src="assets/images/resource/testimonial.png" alt="" />
               </figure>
             </div>
           </div>
