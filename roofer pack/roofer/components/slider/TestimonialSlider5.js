@@ -1,6 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import InitialsAvatar from "../elements/InitialsAvatar"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -60,32 +61,30 @@ export default function TestimonialSlider5() {
                         <div
                             className="image__layer"
                             style={{
-                            backgroundImage: "url(assets/images/shape/shape-52.png)"
+                                backgroundImage: "url(assets/images/shape/shape-52.png)"
                             }}
                         />
                         <div className="testimonials__content">
                             <div className="authore__img">
-                            <figure className="image">
-                                <img src="assets/images/resource/author-01.png" alt="" />
-                            </figure>
+                                <figure className="image">
+                                    <InitialsAvatar name="Jackie Mackenzie" />
+                                </figure>
                             </div>
                             <div className="testimonial__bottom">
-                            <div className="testimonials__text">
-                                <p>
-                                Blandit aliquet varius id malsua nun tempor malesuada
-                                sollicitudin sit tell dignissim lacinia convallis massa
-                                ornare.
-                                </p>
-                            </div>
-                            <div className="authore__info">
-                                <div className="authore__content">
-                                <h5>Ruhan Mukti</h5>
-                                <p>Manager</p>
+                                <div className="testimonials__text">
+                                    <p>
+                                        Brian and his team did an outstanding job on my roof and skylights!  Brian is so easy to work with, and he got right back to me with any questions that I had.  He gave me the most reasonable estimate
+                                        for the job compared to some other companies that I had contacted.  I will definitely recommend E & B Roofing to all of my family and friends.
+                                    </p>
                                 </div>
-                                <div className="quote">
-                                <span className="icon-22" />
+                                <div className="authore__info">
+                                    <div className="authore__content">
+                                        <h5>Jackie Mackenzie</h5>
+                                    </div>
+                                    <div className="quote">
+                                        <span className="icon-22" />
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -95,32 +94,30 @@ export default function TestimonialSlider5() {
                         <div
                             className="image__layer"
                             style={{
-                            backgroundImage: "url(assets/images/shape/shape-52.png)"
+                                backgroundImage: "url(assets/images/shape/shape-52.png)"
                             }}
                         />
                         <div className="testimonials__content">
                             <div className="authore__img">
-                            <figure className="image">
-                                <img src="assets/images/resource/author-01.png" alt="" />
-                            </figure>
+                                <figure className="image">
+                                    <InitialsAvatar name="Carol Roberts" />
+                                </figure>
                             </div>
                             <div className="testimonial__bottom">
-                            <div className="testimonials__text">
-                                <p>
-                                Blandit aliquet varius id malsua nun tempor malesuada
-                                sollicitudin sit tell dignissim lacinia convallis massa
-                                ornare.
-                                </p>
-                            </div>
-                            <div className="authore__info">
-                                <div className="authore__content">
-                                <h5>Jane Cooper</h5>
-                                <p>Ex CEO</p>
+                                <div className="testimonials__text">
+                                    <p>
+                                        Brian and his crew did an amazing job replacing the roofs on my house, shed and entrance to the basement. Everything looks so beautiful. They were professional, worked non-stop with efficiency and cleaned up completely when they were finished. Brian scheduled an estimate within a day and scheduled the job within the week.
+                                        He was readily available via phone and text with any questions or concerns. I would highly recommend E & B roofing. They are the best!
+                                    </p>
                                 </div>
-                                <div className="quote">
-                                <span className="icon-22" />
+                                <div className="authore__info">
+                                    <div className="authore__content">
+                                        <h5>Carol Roberts</h5>
+                                    </div>
+                                    <div className="quote">
+                                        <span className="icon-22" />
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -130,32 +127,30 @@ export default function TestimonialSlider5() {
                         <div
                             className="image__layer"
                             style={{
-                            backgroundImage: "url(assets/images/shape/shape-52.png)"
+                                backgroundImage: "url(assets/images/shape/shape-52.png)"
                             }}
                         />
                         <div className="testimonials__content">
                             <div className="authore__img">
-                            <figure className="image">
-                                <img src="assets/images/resource/author-01.png" alt="" />
-                            </figure>
+                                <figure className="image">
+                                    <InitialsAvatar name="Nathan Guite" />
+                                </figure>
                             </div>
                             <div className="testimonial__bottom">
-                            <div className="testimonials__text">
-                                <p>
-                                Blandit aliquet varius id malsua nun tempor malesuada
-                                sollicitudin sit tell dignissim lacinia convallis massa
-                                ornare.
-                                </p>
-                            </div>
-                            <div className="authore__info">
-                                <div className="authore__content">
-                                <h5>Jon Nasim</h5>
-                                <p>CTO</p>
+                                <div className="testimonials__text">
+                                    <p>
+                                        Brian and his team @ E&B Roofing did a great job with our house in Rehoboth. He not only had the best pricing and certified roofing system but the quality and the craftsmanship was unmatched. I had more than 5 estimates from competitors and he is no doubt on top.
+                                        He answered all my questions and also went the extra mile on the gutters to ensure the roof will perform better than new. Great work.
+                                    </p>
                                 </div>
-                                <div className="quote">
-                                <span className="icon-22" />
+                                <div className="authore__info">
+                                    <div className="authore__content">
+                                        <h5>Nathan Guite</h5>
+                                    </div>
+                                    <div className="quote">
+                                        <span className="icon-22" />
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
