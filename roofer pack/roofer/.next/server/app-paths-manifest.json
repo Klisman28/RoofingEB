@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/api/google-reviews/route": "app/api/google-reviews/route.js",
+  "/_not-found/page": "app/_not-found/page.js"
+}
