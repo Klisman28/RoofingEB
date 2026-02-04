@@ -12,7 +12,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
           <div className="header_top">
             <div className="header_top_left">
               <ul className="top_left">
-                <li style={{ fontSize: '13px' }}><span className="icon-30"></span> &nbsp;Based in Pawtucket, RI · Serving RI & Southeastern MA
+                <li style={{ fontSize: '13px' }}><span className="icon-30"></span> &nbsp;Based in  MA & RI
                 </li>
                 <li style={{ fontSize: '13px' }}>
                   <span className="icon-29"> <Link href="mailto:E_broofing@yahoo.com">E_broofing@yahoo.com &nbsp;&nbsp;</Link></span> <span className="icon-36"> <Link href="tel:+774-300-1932">(774) 300-1932</Link> </span>
@@ -87,15 +87,15 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
             <div className="header__right">
               <div className="header__right__button">
                 <div className="serach-button-style1">
-                  <button type="button" className="search-toggler" onClick={handlePopup}>
+                  {/*   <button type="button" className="search-toggler" onClick={handlePopup}>
                     <i className="icon-50" />
-                  </button>
+                  </button> */}
                 </div>
-                <div className="shopping-cart-box">
+                {/*   <div className="shopping-cart-box">
                   <Link href="/shop">
                     <i className="icon-19" />
                   </Link>
-                </div>
+                </div> */}
                 <div className="header-right_buttom">
                   <div className="btns-box">
                     <Link className="btn-one" href="/">
