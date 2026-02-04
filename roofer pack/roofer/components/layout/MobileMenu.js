@@ -70,7 +70,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                         <h4>Contact Info</h4>
                         <ul>
                             <li>Pawtucket, Rhode Island
-                                (Serving RI & Southeastern MA)</li>
+                                (Serving MA & RI)</li>
                             <li>
                                 <Link href="tel:+7743001932"> (774) 300-1932</Link>
                             </li>
