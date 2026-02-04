@@ -4,6 +4,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import TestimonialSlider5 from '@/components/slider/TestimonialSlider5'
 import Link from "next/link"
 import { useState } from 'react'
+import TestimonialSlider2 from "@/components/slider/TestimonialSlider5"
 export default function Home() {
 
     const [activeIndex, setActiveIndex] = useState(1)
@@ -845,14 +846,14 @@ export default function Home() {
                                         <div className="col-lg-4 col-md-12 normal__text__bottom">
                                             <div className="normal__text">
                                                 <p>
-                                                    Real reviews from Rhode Island & Southeastern Massachusetts customers
+                                                    Real reviews from Southeastern Massachusetts & Rhode Island customers
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="testimonials__slider__about">
-                                    <TestimonialSlider5 />
+                                    <TestimonialSlider2 />
                                 </div>
                             </div>
                         </div>
