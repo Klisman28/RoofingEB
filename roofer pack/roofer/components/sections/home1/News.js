@@ -63,7 +63,7 @@ export default function News() {
                                                     {status === 'submitting' ? '...' : 'Get My Free Tips'}
                                                 </button>
                                             </div>
-                                            {message && <div style={{ marginTop: '10px', color: status === 'success' ? 'white' : 'red' }}>{message}</div>}
+                                            {message & <div style={{ marginTop: '10px', color: status === 'success' ? 'white' : 'red' }}>{message}</div>}
                                         </form>
                                     </div>
                                 </div>

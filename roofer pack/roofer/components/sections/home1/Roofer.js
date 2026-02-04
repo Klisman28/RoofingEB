@@ -69,7 +69,7 @@ export default function Roofer() {
                                                     </div>
                                                     <div className="expert__right">
                                                         <h4>15+ Years Experience</h4>
-                                                        <p>Serving RI & MA with honest, high-quality workmanship.</p>
+                                                        <p>Serving MA & RI with honest, high-quality workmanship.</p>
                                                     </div>
                                                 </div>
                                             </div>

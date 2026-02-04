@@ -36,7 +36,7 @@ export default function Quality() {
                                 </div>
                                 <div className="service__text">
                                     <h4><Link href="/services-details">Top-Quality Materials</Link></h4>
-                                    <p>We use only the best materials from trusted manufacturers to ensure your roof, siding, and gutters last for decades.</p>
+                                    <p>We use only the best materials from trusted manufacturers to ensure that your roof, siding, and gutters last for decades.</p>
                                 </div>
                             </div>
                         </div>

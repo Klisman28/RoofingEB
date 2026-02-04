@@ -27,7 +27,7 @@ export default function Testimonial() {
                 <div className="testimonials__content__one">
                   <div className="title">
                     <div className="sub__title">
-                      <h6>Review de google</h6>
+                      <h6>Review Google</h6>
                     </div>
                     <div className="main__title">
                       <h2>

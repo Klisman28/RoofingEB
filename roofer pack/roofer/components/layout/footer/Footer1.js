@@ -122,8 +122,8 @@ export default function Footer1() {
                                             <div className="widget_content">
                                                 <ul className="links_list clearfix">
                                                     <li>Mon - Fri: 8:00AM - 6:00PM</li>
-                                                    <li>Sat - Sun: 8:00AM - 2:00PM</li>
-                                                    <li>Sun: Closed</li>
+                                                    <li>Sat: 8:00AM - 2:00PM</li>
+                                                    <li>Sun: By appointment only</li>
                                                     <li>24/7 emergency tarping & leak response available.</li>
                                                 </ul>
                                                 <div className="widget_media">

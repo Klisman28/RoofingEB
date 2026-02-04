@@ -65,7 +65,7 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div className="normal__text">
-                                                <p>E&B ROOFING LLC specializes in top-quality roofing, siding and window services. Serving Rhode Island and Southeastern Massachusetts for over 15 years.</p>
+                                                <p>E&B ROOFING LLC specializes in top-quality roofing, siding and window services. Serving Southeastern Massachusetts and Rhode Island for over 15 years.</p>
                                             </div>
                                             <div className="contact__info">
                                                 <div className="contact__info__block">

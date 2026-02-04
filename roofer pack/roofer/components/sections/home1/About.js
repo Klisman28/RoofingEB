@@ -74,7 +74,7 @@ export default function About() {
                                         </div>
                                     </div>
                                     <div className="normal__text">
-                                        <p>E&B ROOFING LLC is a family-owned and operated licensed contractor creating happy customers across Rhode Island and Southeastern Massachusetts. We specialize in roofing, siding, windows, and gutters, delivering honest work at fair prices.</p>
+                                        <p>E&B ROOFING LLC is a family-owned and operated licensed contractor creating happy customers across Southeastern Massachusetts and Rhode Island. We specialize in roofing, siding, windows, and gutters, delivering honest work at fair prices.</p>
                                     </div>
                                     <div className="engineer__section">
                                         <div className="row">
