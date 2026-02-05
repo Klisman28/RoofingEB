@@ -25,23 +25,30 @@ export default function Home() {
         setResponseMsg('');
 
         try {
-            const res = await fetch('/api/contact', {
+            // Formspree Form ID - E&B Roofing Contact Form
+            const FORMSPREE_FORM_ID = 'mykdgkke';
+
+            const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
                 body: JSON.stringify(formData),
             });
-            const data = await res.json();
+
             if (res.ok) {
                 setStatus('success');
-                setResponseMsg('Thank you! Your message has been sent.');
+                setResponseMsg('✅ Thank you! Your message has been sent successfully. We will contact you soon!');
                 setFormData({ name: '', email: '', phone: '', message: '' });
             } else {
+                const data = await res.json();
                 setStatus('error');
-                setResponseMsg(data.error || 'Something went wrong.');
+                setResponseMsg(data.error || '❌ Something went wrong. Please try again.');
             }
         } catch (error) {
             setStatus('error');
-            setResponseMsg('Failed to send message.');
+            setResponseMsg('❌ Failed to send message. Please check your internet connection.');
         }
     };
 
