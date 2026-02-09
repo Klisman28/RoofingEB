@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean": "node scripts/clean.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p ${PORT:-3000}",
     "lint": "next lint",
     "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@thednp/dommatrix": "^2.0.6",
