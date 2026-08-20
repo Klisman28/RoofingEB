@@ -7,11 +7,67 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import Script from 'next/script'
 import { inter, roboto } from '@/lib/font'
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_NAME, SITE_URL, SOCIAL_IMAGE, localBusinessSchema } from '@/lib/seo'
+
 export const metadata = {
-    title: 'E&B Roofing',
-    description: 'E&B Roofing - Where Performance Meets Quality',
+    metadataBase: new URL(SITE_URL),
+    title: {
+        default: DEFAULT_TITLE,
+        template: `%s | ${SITE_NAME}`,
+    },
+    description: DEFAULT_DESCRIPTION,
+    applicationName: SITE_NAME,
+    keywords: [
+        'roofing contractor Rhode Island',
+        'roof repair Southeastern Massachusetts',
+        'roof replacement Pawtucket RI',
+        'roofing Attleboro MA',
+        'siding contractor MA RI',
+        'replacement windows MA RI',
+        'gutter installation MA RI',
+    ],
+    creator: 'E&B Roofing LLC',
+    publisher: 'E&B Roofing LLC',
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+            'max-video-preview': -1,
+        },
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: '/',
+        siteName: SITE_NAME,
+        title: DEFAULT_TITLE,
+        description: DEFAULT_DESCRIPTION,
+        images: [
+            {
+                url: SOCIAL_IMAGE,
+                width: 1200,
+                height: 900,
+                alt: 'E&B Roofing project in Rhode Island and Southeastern Massachusetts',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: DEFAULT_TITLE,
+        description: DEFAULT_DESCRIPTION,
+        images: [SOCIAL_IMAGE],
+    },
     icons: {
-        icon: 'assets/images/logo.png',
+        icon: '/assets/images/logo.png',
     },
 }
 
@@ -20,6 +76,10 @@ export default function RootLayout({ children }) {
         <html lang="en" className={`${inter.variable} ${roboto.variable}`}>
             <body>
                 {children}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+                />
                 <Script id="meta-pixel" strategy="afterInteractive">
                     {`!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

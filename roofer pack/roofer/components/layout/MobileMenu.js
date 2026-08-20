@@ -35,7 +35,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                 <nav className="menu-box">
                     <div className="nav-logo">
                         <Link href="/">
-                            <img src="assets/images/white-logo.png" alt="" title="" />
+                            <img src="assets/images/white-logo.png" alt="E&B Roofing" />
                         </Link>
                     </div>
                     {/*menu-outer*/}
@@ -45,23 +45,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                 <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}><Link href="/" onClick={handleMobileMenu}>Home</Link>
                                 </li>
                                 <li><Link href="/about" onClick={handleMobileMenu}>About</Link></li>
-                                <li className={isActive.key == 3 ? "dropdown current" : ""}><Link href="/services" onClick={handleMobileMenu}>Roofing Services</Link>
-                                    <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                        <li><Link href="/services" onClick={handleMobileMenu}>Services</Link></li>
-                                        <li><Link href="/services-single" onClick={handleMobileMenu}>Services Single</Link></li>
-                                        <li><Link href="/services-details" onClick={handleMobileMenu}>Services Details</Link></li>
-                                    </ul>
-                                    <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></div>
-                                </li>
+                                <li><Link href="/services" onClick={handleMobileMenu}>Roofing Services</Link></li>
                                 <li><Link href="/project-2" onClick={handleMobileMenu}>Our Work</Link></li>
-                                <li className={isActive.key == 5 ? "dropdown current" : ""}><Link href="/testimonial-2" onClick={handleMobileMenu}>Review</Link>
-                                    <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                                        <li><Link href="/blog-grid" onClick={handleMobileMenu}>Blog Grid</Link></li>
-                                        <li><Link href="/blog-standard" onClick={handleMobileMenu}>Blog Standard</Link></li>
-                                        <li><Link href="/blog-details" onClick={handleMobileMenu}>Blog Details</Link></li>
-                                    </ul>
-                                    <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></div>
-                                </li>
+                                <li><Link href="/testimonial-2" onClick={handleMobileMenu}>Reviews</Link></li>
                                 <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
                             </ul>
                         </div>
@@ -82,28 +68,13 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <div className="social-links">
                         <ul className="clearfix">
                             <li>
-                                <Link href="/">
-                                    <span className="fab fa-twitter" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
+                                <Link href="https://www.facebook.com/ebroofingusa">
                                     <span className="fab fa-facebook-square" />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
-                                    <span className="fab fa-pinterest-p" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
+                                <Link href="https://www.instagram.com/e_broofing">
                                     <span className="fab fa-instagram" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    <span className="fab fa-youtube" />
                                 </Link>
                             </li>
                         </ul>

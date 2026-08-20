@@ -26,8 +26,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
               <div className="header_right_info">
                 <ul className="top_right">
                   <li className="login__border" style={{ fontSize: '13px' }}>
-                    <Link href="/login">     🛡️ Licensed &amp; Insured · MA HIC #212610 · RI Reg. #GC-47693
-                    </Link>
+                    <span>🛡️ Licensed &amp; Insured · MA HIC #212610 · RI Reg. #GC-47693</span>
 
 
                   </li>
@@ -64,7 +63,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 style={{ backgroundImage: "url(assets/images/shape/shape-02.png)" }}
               >
                 <Link href="/">
-                  <img src="assets/images/logo.png" alt="" />
+                  <img src="assets/images/logo.png" alt="E&B Roofing" />
                 </Link>
               </figure>
             </div>
@@ -98,7 +97,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 </div> */}
                 <div className="header-right_buttom">
                   <div className="btns-box">
-                    <Link className="btn-one" href="/">
+                    <Link className="btn-one" href="/contact">
                       <em>
                         <i />
                         <i />
@@ -123,7 +122,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
               <div className="logo-box">
                 <figure className="logo">
                   <Link href="/">
-                    <img src="assets/images/logo.png" alt="" />
+                    <img src="assets/images/logo.png" alt="E&B Roofing" />
                   </Link>
                 </figure>
               </div>

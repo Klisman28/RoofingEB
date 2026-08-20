@@ -22,7 +22,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
                   }}
                 >
                   <Link href="/">
-                    <img src="assets/images/logo.png" alt="" />
+                    <img src="assets/images/logo.png" alt="E&B Roofing" />
                   </Link>
                 </figure>
               </div>
@@ -52,7 +52,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
                 </div>
                 <div className="header-right_buttom">
                   <div className="btns-box">
-                    <Link className="btn-four" href="/">
+                    <Link className="btn-four" href="/contact">
                       {" "}
                       Free Estimate{" "}
                     </Link>
@@ -69,7 +69,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, isSide
               <div className="logo-box">
                 <figure className="logo">
                   <Link href="/">
-                    <img src="assets/images/logo.png" alt="" />
+                    <img src="assets/images/logo.png" alt="E&B Roofing" />
                   </Link>
                 </figure>
               </div>

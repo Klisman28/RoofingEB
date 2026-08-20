@@ -12,6 +12,14 @@ import News from "@/components/sections/home1/News"
 import Brand from "@/components/sections/home1/Brand"
 import Testimonial from "@/components/sections/home1/Testimonial"
 import Workprocess from "@/components/sections/home1/Workprocess"
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    path: '/',
+    absoluteTitle: true,
+})
 
 export default function Home() {
 

@@ -32,7 +32,7 @@ export default function Services() {
                             </div>
                             <div className="main__title">
                                 <h2>
-                                    We’re Prodviding Quality <br />
+                                    We’re Providing Quality <br />
                                     Roofing Services
                                 </h2>
                             </div>
@@ -82,8 +82,9 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/service/roofing_services.jpg"
-                                                                alt=""
+                                                                src="assets/images/service/roofing_services.JPG"
+                                                                alt="Roof replacement project by E&B Roofing"
+                                                                loading="lazy"
                                                             />
                                                         </figure>
                                                     </div>
@@ -112,7 +113,7 @@ export default function Services() {
                                                             </ul>
                                                         </div>
                                                         <div className="tab__btn">
-                                                            <Link className="btn-one two" href="/service">
+                                                            <Link className="btn-one two" href="/services">
                                                                 <em>
                                                                     <i />
                                                                     <i />
@@ -135,8 +136,9 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/service/siding_installation.jpg"
-                                                                alt=""
+                                                                src="assets/images/service/siding_installation.JPG"
+                                                                alt="Vinyl siding installation in Southeastern Massachusetts and Rhode Island"
+                                                                loading="lazy"
                                                             />
                                                         </figure>
                                                     </div>
@@ -165,7 +167,7 @@ export default function Services() {
                                                             </ul>
                                                         </div>
                                                         <div className="tab__btn">
-                                                            <Link className="btn-one" href="/service">
+                                                            <Link className="btn-one" href="/services">
                                                                 <em>
                                                                     <i />
                                                                     <i />
@@ -188,8 +190,9 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/service/windwo_replacement.jpg"
-                                                                alt=""
+                                                                src="assets/images/service/windwo_replacement.JPG"
+                                                                alt="Residential replacement window installation"
+                                                                loading="lazy"
                                                             />
                                                         </figure>
                                                     </div>
@@ -218,7 +221,7 @@ export default function Services() {
                                                             </ul>
                                                         </div>
                                                         <div className="tab__btn">
-                                                            <Link className="btn-one" href="/service">
+                                                            <Link className="btn-one" href="/services">
                                                                 <em>
                                                                     <i />
                                                                     <i />
@@ -241,8 +244,9 @@ export default function Services() {
                                                     <div className="tab__left__content">
                                                         <figure className="image">
                                                             <img
-                                                                src="assets/images/service/Skylights&Chimneys.jpg"
-                                                                alt=""
+                                                                src="assets/images/service/Skylights&Chimneys.JPG"
+                                                                alt="Skylight and chimney roofing work"
+                                                                loading="lazy"
                                                             />
                                                         </figure>
                                                     </div>
@@ -271,7 +275,7 @@ export default function Services() {
                                                             </ul>
                                                         </div>
                                                         <div className="tab__btn">
-                                                            <Link className="btn-one" href="/service">
+                                                            <Link className="btn-one" href="/services">
                                                                 <em>
                                                                     <i />
                                                                     <i />
@@ -299,8 +303,6 @@ export default function Services() {
         </>
     )
 }
-
-
 
 
 
